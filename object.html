@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        var person = {
+            name: "Sonia",
+            lastname: "Chauhan",
+            Age: 22,
+            details: function() {
+                return this.name + " " + this.lastname + " age is " + this.Age;
+            }
+
+
+        };
+        document.getElementById("demo").innerHTML = person.details();
+    </script>
+
+
+</body>
+
+</html>

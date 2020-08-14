@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        Example
+    </title>
+</head>
+
+<body>
+
+    <select name="" id="select">
+            <option value="default">default</option>
+    </select>
+
+    <script>
+        var select = document.getElementById("select"),
+            arr = ["html", "css", "php", "java"];
+        for (var i = 0; i <= arr.length; i++) {
+            var option = document.createElement("OPTION"),
+                text = document.createTextNode(arr[i]);
+            option.appendChild(text);
+            select.insertBefore(option, select.lastChild);
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
